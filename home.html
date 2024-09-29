@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
- <meta charset="UTF-8">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <title>Home</title>
- <!--css file-->
- <link rel="stylesheet" href="tv.css">
-  <!--bootstrab files-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="tv.css">
+      <!--bootstrab files-->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" 
   rel="stylesheet" 
   integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
@@ -34,7 +33,674 @@
    crossorigin="anonymous"
    referrerpolicy="no-referrer" />
 </head>
-<body>
-      <img src="./resources/b23.jpg">
+<body style="background: #000000;">
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="logo">
+           <h2>OH<span>ROM</pan></h2>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./movies.html">Movies</a></li>
+            <li><a href="./cinemas.html">Cinemas</a></li>
+            <li><a href="./contact_us.html">Contact Us</a></li>
+            <li><a href="./about_us.html">About </a></li>
+        </ul>
+        <div class="actions">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
+    </nav>
+    <script src="tv.js"></script>
+    <!--end navbar-->
+    <div id="carouselExampleCaptions" class="carousel slide">
+     <div class="carousel-indicators">
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+     </div>
+     <div class="carousel-inner">
+       <div class="carousel-item active">
+         <img src="./resources/m1.jpg" class="d-block w-100" alt="">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>First slide label</h5>
+           <p>Some representative placeholder content for the first slide.</p>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="./resources/m19.png" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Second slide label</h5>
+           <p>Some representative placeholder content for the second slide.</p>
+         </div>
+       </div>
+       <div class="carousel-item">
+         <img src="./resources/m22.jpg" class="d-block w-100" alt="...">
+         <div class="carousel-caption d-none d-md-block">
+           <h5>Third slide label</h5>
+           <p>Some representative placeholder content for the third slide.</p>
+         </div>
+       </div>
+     </div>
+     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+       <span class="visually-hidden"></span>
+     </button>
+     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+       <span class="visually-hidden"></span>
+     </button>
+   </div>
+    <!--movies-->
+    <div class="movies">
+      <h1 style="padding-top: 50px;"><span>M</span>ovies <i class="fa-solid fa-film"></i>
+      </h1>
+<!--start action films-->
+<div class=" action-content"> 
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-indicators">
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="row">
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/4KseasonRobocop-Poster-1639061022.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/BlackAdam-Poster-1676565199.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/DieHard1-Poster-1671032175.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/DunePartTwo-Poster-1708615313.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+<div class="carousel-item">
+<div class="row">
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/FlashGordon-Poster-1638192814.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/Jumanji2017-Poster-1634548732.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/Morbius-Poster-1647269555.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/ReadyPlayerOne-Poster-1622055494.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i> 
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+
+</div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+
+
+</div>
+</div>
+<div class="carousel-item">
+<div class="row">
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/StarTrekBeyond-Poster-1634860380.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>            
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/TheMatrixResurrections-Poster-1707921775.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br>
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/VenomLetthebeCarnage-Poster-1640233987.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+<p>the events of the films are<br> 
+in the middle of america,<br>
+and this neighboorhood</p>
+<div id="stars">
+<span>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+<i class="fa-solid fa-star"></i>
+</span>
+<i class="fa-regular fa-star"></i>
+<i class="fa-regular fa-star"></i>
+
+</div>
+<h2 class="price">15$</h2>
+<a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="card">
+<img src="action.img/ReadyPlayerOne-Poster-1622055494.jpg" class="d-block w-100" alt="...">
+<div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+and this neighboorhood</p> 
+<div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+
+</div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+</div>
+</div>
+</div> 
+
+
+</div>
+</div>
+</div>
+</div>
+</div>                  
+<!--end action films-->
+<br><br>
+  <!--start action films-->
+<div class=" action-content"> 
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+  <div class="carousel-item active">
+  <div class="row">
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/4KseasonRobocop-Poster-1639061022.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/BlackAdam-Poster-1676565199.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/DieHard1-Poster-1671032175.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/DunePartTwo-Poster-1708615313.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  
+  </div>
+  </div>
+  <div class="carousel-item">
+  <div class="row">
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/FlashGordon-Poster-1638192814.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/Jumanji2017-Poster-1634548732.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/Morbius-Poster-1647269555.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/ReadyPlayerOne-Poster-1622055494.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+    <p>the events of the films are<br>
+    in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+    <span>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i> 
+    </span>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+  
+  </div>
+    <h2 class="price">15$</h2>
+    <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  
+  
+  </div>
+  </div>
+  <div class="carousel-item">
+  <div class="row">
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/StarTrekBeyond-Poster-1634860380.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>            
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/TheMatrixResurrections-Poster-1707921775.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br>
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/VenomLetthebeCarnage-Poster-1640233987.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+  <p>the events of the films are<br> 
+  in the middle of america,<br>
+  and this neighboorhood</p>
+  <div id="stars">
+  <span>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  <i class="fa-solid fa-star"></i>
+  </span>
+  <i class="fa-regular fa-star"></i>
+  <i class="fa-regular fa-star"></i>
+  
+  </div>
+  <h2 class="price">15$</h2>
+  <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div>
+  <div class="col-lg-3">
+  <div class="card">
+  <img src="action.img/ReadyPlayerOne-Poster-1622055494.jpg" class="d-block w-100" alt="...">
+  <div class="booking">
+    <p>the events of the films are<br>
+    in the middle of america,<br>
+  and this neighboorhood</p> 
+  <div id="stars">
+    <span>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    <i class="fa-solid fa-star"></i>
+    </span>
+    <i class="fa-regular fa-star"></i>
+    <i class="fa-regular fa-star"></i>
+  
+  </div>
+    <h2 class="price">15$</h2>
+    <a href="#" class="btn">buy tickets</a>
+  </div>
+  </div>
+  </div> 
+  
+  
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>                  
+  <!--end action films-->
+  <div class="see">
+  <a class="see-more" href="./movies.html">See More <i class="fa-solid fa-angles-right"></i></a>
+</div>
+</div> 
+</div>  
+</div>
+<div class="actors">
+  
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+   
 </body>
 </html>
