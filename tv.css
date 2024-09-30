@@ -151,14 +151,12 @@ transition:0.3s ;
     color: black;
     background-color:#fe8a06;
 }
-<<<<<<< HEAD
-=======
 /*scroll*/
 #btn{
     width: 30px;
     height: 30px;
     border: none;
-    background-color:#fe8a06;
+    background-color: #fe8a06;
     color:black ;
     border-radius: 50%;
     -webkit-border-radius: 50%;
@@ -171,7 +169,6 @@ transition:0.3s ;
     right: 10px;
     display: none;
 }
->>>>>>> 2683d634bae75864b6284aa6157a705f163f6cbe
 /*end movies*/
 .comming-soon{
     padding: 20px;
