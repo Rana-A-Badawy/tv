@@ -114,6 +114,7 @@ width: 80%;
 text-align: center;
 align-items: center;
 margin: auto;
+padding: 30px;
 }
  .movies h2{
  color: white;
@@ -185,6 +186,26 @@ background-color:#fe8a06;
 .see-more:hover{
     color: #d45704;
 }
+.actors{
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+    gap: 5px;
+}
+.actors img{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    height: 130px;
+    width: 130px;
+    transition: transform .3s ease,border-color .3 ease;
+}
+.actors img:hover{
+    transform: scale(1.07);
+    border-color: #d45704;
+}
 /* Read this note before write any thing ====>>>>>>> */
 /* important note : please write your css code before this part i want this part in the end of the code*/
 /* Dark Mode */
@@ -233,6 +254,9 @@ body .dark-mode {
    }
    body.dark-mode{
     background:  #f6ebe0;
+   }
+   body.dark-mode .actors{
+    background: #f9fafa;
    }
    /* Responsive Design */
    @media (max-width: 990px) {
