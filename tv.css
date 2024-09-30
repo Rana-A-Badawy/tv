@@ -260,10 +260,18 @@ background-color:#fe8a06;
     height: 130px;
     width: 130px;
     transition: transform .3s ease,border-color .3 ease;
+    -webkit-transition: transform .3s ease,border-color .3 ease;
+    -moz-transition: transform .3s ease,border-color .3 ease;
+    -ms-transition: transform .3s ease,border-color .3 ease;
+    -o-transition: transform .3s ease,border-color .3 ease;
 }
 .actors img:hover{
     transform: scale(1.07);
     border-color: #d45704;
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
 }
 /* Read this note before write any thing ====>>>>>>> */
 /* important note : please write your css code before this part i want this part in the end of the code*/
