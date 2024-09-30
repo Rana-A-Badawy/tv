@@ -5,6 +5,12 @@ window.addEventListener('scroll', function() {
  } else {
      navbar.classList.remove('scrolled');
  }
+ if(scrollY>=200){
+    btn.style.display="block";
+   } 
+   else{
+    btn.style.display="none";
+   }
 });
 // Toggle dark mode
 const themeToggle = document.getElementById('theme-toggle');
