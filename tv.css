@@ -103,7 +103,7 @@ width: 80%;
 text-align: center;
 align-items: center;
 margin: auto;
-padding: 30px;
+/* padding: 30px; */
 }
  .movies h2{
  color: white;
@@ -209,6 +209,10 @@ transition:0.3s ;
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 .about button:hover{
     color: white;
@@ -260,10 +264,7 @@ transition:0.3s ;
     height: 130px;
     width: 130px;
     transition: transform .3s ease,border-color .3 ease;
-    -webkit-transition: transform .3s ease,border-color .3 ease;
-    -moz-transition: transform .3s ease,border-color .3 ease;
-    -ms-transition: transform .3s ease,border-color .3 ease;
-    -o-transition: transform .3s ease,border-color .3 ease;
+  
 }
 .actors img:hover{
     transform: scale(1.07);
