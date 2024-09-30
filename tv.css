@@ -5,25 +5,10 @@ padding: 0;
 box-sizing: border-box;
 }
 body{
-<<<<<<< HEAD
-    background-color: black;
-}
-
-=======
 background: #000000;
 }
 /* Navbar Styling */
-.navbar {
-display: flex;
-justify-content: space-between;
-align-items: center;
-position : fixed;
-z-index: 1000;
-top: 0;
-width: 100%;
-padding: 10px 20px;
-background: rgb(0, 0, 0);
-transition: background 0.3s ease-in-out;
+.navbar { display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 1000; top: 0; width: 100%; padding: 10px 20px; background: rgb(0, 0, 0); transition: background 0.3s ease-in-out; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out;
 }
 .navbar.scrolled {
 position: sticky;
@@ -57,12 +42,11 @@ display: flex;
 align-items: center;
 }
 .actions input {
-padding: 5px;
-margin-right: 10px;
-display: flex;
-background-color: #f6ebe0;
-border-radius: 6px;
-border: none;
+     padding: 5px;
+      margin-right: 10px;
+       display: flex;
+        background-color: #f6ebe0;
+     border-radius: 6px; border: none;
 }
 .actions button {
 background: none;
@@ -94,7 +78,6 @@ color:#fe8a06;
 .carousel-item{
 background: #000000;
 }   
->>>>>>> e4f79f2eb3a7124df53286a9846e80f69c5761ba
 /*start movies*/
 .movies {
 background-color: black;
@@ -177,7 +160,6 @@ transition:0.3s ;
 color: black;
 background-color:#fe8a06;
 }
-<<<<<<< HEAD
 
 /*end movies*/
 /*start about us*/
@@ -248,7 +230,6 @@ background-color:#fe8a06;
 .about .social i:hover{
     background-color: white;
 }
-=======
 /*end movies*/
 /*see more*/
 .see{
@@ -361,4 +342,3 @@ body .dark-mode {
         display: block;
     }
    }
->>>>>>> e4f79f2eb3a7124df53286a9846e80f69c5761ba
