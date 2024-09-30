@@ -1,98 +1,183 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
 }
 body{
+<<<<<<< HEAD
     background-color: black;
 }
 
+=======
+background: #000000;
+}
+/* Navbar Styling */
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+position : fixed;
+z-index: 1000;
+top: 0;
+width: 100%;
+padding: 10px 20px;
+background: rgb(0, 0, 0);
+transition: background 0.3s ease-in-out;
+}
+.navbar.scrolled {
+position: sticky;
+top: 0%;
+left: 0;
+z-index: 1000px;
+}
+.logo a {
+color: white;
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+}
+.nav-links {
+list-style: none;
+display: flex;
+}
+.nav-links li {
+margin: 0 15px;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 22px;
+}
+.nav-links a:hover{
+color: #fe8a06;
+}
+.actions {
+display: flex;
+align-items: center;
+}
+.actions input {
+padding: 5px;
+margin-right: 10px;
+display: flex;
+background-color: #f6ebe0;
+border-radius: 6px;
+border: none;
+}
+.actions button {
+background: none;
+border: none;
+color: white;
+font-size: 24px;
+cursor: pointer;
+margin: 6px;
+margin-right: 8px; 
+}
+.menu-icon {
+display: none;
+font-size: 30px;
+color: #fe8a06;
+cursor: pointer;
+margin: 5px;
+}
+/* end nav bar */
+/* Content Styling */
+.content {
+padding-top: 80px;
+}
+.logo h2{
+color: #fdf7f7;
+}
+.logo span{
+color:#fe8a06;
+}
+.carousel-item{
+background: #000000;
+}   
+>>>>>>> e4f79f2eb3a7124df53286a9846e80f69c5761ba
 /*start movies*/
 .movies {
 background-color: black;
-
-
 }
 .movies h1{
-    color: white;
+color: white;
 margin: auto;
 border-bottom: 2px solid white;
 width: 180px;
+text-align: center;
+font-size: 38px;
+margin-bottom: 50px;
 }
 .movies span{
-    color:rgb(198, 167, 11);
+color: #fe8a06;
 }
 .movies h1 i{
-    color: white;
-    margin-left: 5px;
+color: white;
+ margin-left: 5px;
 }
  .movies .carousel{
-    width: 80%;
-    text-align: center;
-    align-items: center;
-    margin: auto;
+width: 80%;
+text-align: center;
+align-items: center;
+margin: auto;
+padding: 30px;
 }
-
  .movies h2{
-color: white;
-margin-left: 20px;
-
+ color: white;
+ margin: 40px auto;
+ text-align: center;
 }
 .movies img{
-    width: 100%;
-    height: 97%;
-    
+width: 100%;
+height: 97%;
 }
-  .card .booking .price{
-    color: rgb(198, 167, 11);
-    font-size: 30px;
-
+.card .booking .price{
+color: #fe8a06;
+font-size: 30px;
 }
  .card .booking{
-  
-    justify-content: space-between;
-    position: absolute;
-    bottom: -100%;
-    left: 0;
-    width: 100%;
- 
-    backdrop-filter:blur(16px);
-    background: #0000009c;
-    transition: 0.5;
-    -webkit-transition: 0.5;
-    -moz-transition: 0.5;
-    -ms-transition: 0.5;
-    -o-transition: 0.5;
-    display: none;
+justify-content: space-between;
+position: absolute;
+bottom: -100%;
+left: 0;
+width: 100%;
+backdrop-filter:blur(16px);
+background: #0000009c;
+transition: 0.5;
+-webkit-transition: 0.5;
+-moz-transition: 0.5;
+-ms-transition: 0.5;
+-o-transition: 0.5;
+display: none;
 }
 .card:hover .booking{
-    display: inline;
-    bottom: 0;
+display: inline;
+bottom: 0;
 }
 .booking p{
-    color: white;
-    font-weight: bold;
+color: white;
+font-weight: bold;
 }
 .booking p span{
-    color:rgb(198, 167, 11) ;
+color:#fe8a06;
 }
 .card .btn{
-   width: 100%;
-    border: rgb(198, 167, 11);
-
-    background-color:black;
-    color: rgb(198, 167, 11);
-    cursor: pointer;
-    transition:0.3s ;
-    -webkit-transition:0.3s ;
-    -moz-transition:0.3s ;
-    -ms-transition:0.3s ;
-    -o-transition:0.3s ;
+width: 100%;
+border: #fe8a06;
+background-color:black;
+color: #fe8a06;
+cursor: pointer;
+transition:0.3s ;
+-webkit-transition:0.3s ;
+-moz-transition:0.3s ;
+-ms-transition:0.3s ;
+-o-transition:0.3s ;
 }
 .card .btn:hover{
-    color: black;
-    background-color: rgb(198, 167, 11);
+color: black;
+background-color:#fe8a06;
 }
+<<<<<<< HEAD
 
 /*end movies*/
 /*start about us*/
@@ -163,3 +248,117 @@ margin-left: 20px;
 .about .social i:hover{
     background-color: white;
 }
+=======
+/*end movies*/
+/*see more*/
+.see{
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+}
+.see-more{
+    text-decoration: none;
+    color: #fe8a06;
+    font-size: 24px;
+}
+.see-more:hover{
+    color: #d45704;
+}
+.actors{
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+    gap: 5px;
+}
+.actors img{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    height: 130px;
+    width: 130px;
+    transition: transform .3s ease,border-color .3 ease;
+}
+.actors img:hover{
+    transform: scale(1.07);
+    border-color: #d45704;
+}
+/* Read this note before write any thing ====>>>>>>> */
+/* important note : please write your css code before this part i want this part in the end of the code*/
+/* Dark Mode */
+body .dark-mode {
+    background-color: #fefdfd;
+   }
+   body .dark-mode{
+    background: #faf9f8bd ;
+   }
+   body.dark-mode .navbar {
+    background-color: #faf9f8;
+   }
+   body.dark-mode .navbar .logo h2 {
+   color: #000000;
+   }
+   body.dark-mode .nav-links a {
+    color: #060707;
+   }
+   body.dark-mode .nav-links a:hover{
+    color: #fe8a06;
+   }
+   body.dark-mode .actions input {
+    background-color: #ffffff;
+    border: 1px solid #060707;
+    color: #050505;
+   }
+   body.dark-mode .carousel-item{
+    background: #f6ebe0;
+   }
+   body.dark-mode .actions i{
+   color: #000000;
+   }
+   body.dark-mode .movies{
+    background:  #faf9f8;
+    color: #000000;
+   }
+   body.dark-mode h2{
+    color: #000000;
+   }
+    body.dark-mode h1{
+    color: #000000;
+    border-bottom: 2px solid  black;
+   }
+   body.dark-mode h1 i{
+    color: black;
+   }
+   body.dark-mode{
+    background:  #f6ebe0;
+   }
+   body.dark-mode .actors{
+    background: #f9fafa;
+   }
+   /* Responsive Design */
+   @media (max-width: 990px) {
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(5, 5, 5, 0.855);
+    width: 100%;
+    margin-top: 20px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+    body.dark-mode .nav-links a {
+     color: #f9fafa;
+    }
+    .actions input {
+        display: block;
+    }
+   }
+>>>>>>> e4f79f2eb3a7124df53286a9846e80f69c5761ba
