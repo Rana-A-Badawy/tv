@@ -217,8 +217,8 @@ border-radius: 10px;
     color: white;
 }
 .about h1{
-        color: white;
-   margin: auto;
+    color: white;
+    margin: auto;
     border-bottom: 2px solid white;
     width: 188px;
 }
@@ -239,10 +239,6 @@ border-radius: 10px;
 }
 .about p{
     font-size: 18px;
-}
-<<<<<<< HEAD
-.about h2{
-
 }
 /* .about button{
     margin-left:2px ;
@@ -265,13 +261,10 @@ border-radius: 10px;
     color: white;
     background-color: black;
 } */
-.about .social{
+/* .about .social{
  margin: 20px;  
-}
-=======
+} */
 
-
->>>>>>> 2683d634bae75864b6284aa6157a705f163f6cbe
 .about .social i{
     margin: 5px;
     padding: 10px;
@@ -283,7 +276,7 @@ border-radius: 10px;
     border: 2px solid ;
 }
 .about .social i:hover{
-    background-color: white;
+    background-color:  #b8b7b620;
 }
 /*end about us*/
 /*see more*/
