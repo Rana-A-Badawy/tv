@@ -172,10 +172,9 @@ transition:0.3s ;
 }
 .about h1{
         color: white;
-    margin: auto;
+   margin: auto;
     border-bottom: 2px solid white;
-    width: 180px;
-
+    width: 188px;
 }
 .about h1 span{
     color:#fe8a06 ;
@@ -189,40 +188,17 @@ transition:0.3s ;
     width: 100%;
     height: 100%;
 }
+.about h2{
+    font-size: 20px;
+}
 .about p{
     font-size: 18px;
 }
-.about h2{
-}
 
 
-/* .about button{
-    margin-left:2px ;
-    background-color: black;
-    color: white;
-    border: 2px solid #fe8a06;
-    transition: 0.5;
-    background-color:#fe8a06 ;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
-}
-.about button:hover{
-    color: white;
-    background-color: black;
-} */
-.about .social{
- margin: 20px;  
-}
 .about .social i{
     margin: 5px;
-    padding: 15px;
+    padding: 10px;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
