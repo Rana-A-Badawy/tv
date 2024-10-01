@@ -100,8 +100,8 @@ color: white;
 }
  .movies .carousel{
 width: 80%;
-text-align: center;
-align-items: center;
+/* text-align: center;
+align-items: center; */
 margin: auto;
 /* padding: 30px; */
 }
@@ -118,8 +118,11 @@ height: 97%;
 color: #fe8a06;
 font-size: 30px;
 }
- .card .booking{ justify-content: space-between;
-     position: absolute; bottom: -100%; left: 0; width: 100%; 
+ .card .booking{ 
+     position: absolute;
+      bottom: -100%;
+       left: 0; 
+       width: 100%; 
      backdrop-filter:blur(16px);
       background: #0000009c; transition: 0.5;
         display: none;
