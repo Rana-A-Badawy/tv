@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*start cinema*/
 body {
   background-color: #ddd6d6;
@@ -64,3 +65,473 @@ body {
   background-color: rgb(83, 25, 23);
 }
 /*end cinema*/
+=======
+/* General Reset */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+background: #000000;
+}
+/* Navbar Styling */
+.navbar { display: flex; justify-content: space-between; align-items: center; position: fixed; z-index: 1000; top: 0; width: 100%; padding: 10px 20px; background: rgb(0, 0, 0); transition: background 0.3s ease-in-out; -webkit-transition: background 0.3s ease-in-out; -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out; -o-transition: background 0.3s ease-in-out;
+}
+.navbar.scrolled {
+position: sticky;
+top: 0%;
+left: 0;
+z-index: 1000px;
+}
+.logo a {
+color: white;
+font-size: 24px;
+font-weight: bold;
+text-decoration: none;
+}
+.nav-links {
+list-style: none;
+display: flex;
+}
+.nav-links li {
+margin: 0 15px;
+}
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 22px;
+}
+.nav-links a:hover{
+color: #fe8a06;
+}
+.actions {
+display: flex;
+align-items: center;
+}
+.actions input {
+     padding: 5px;
+      margin-right: 10px;
+       display: flex;
+        background-color: #f6ebe0;
+     border-radius: 6px; border: none;
+}
+.actions button {
+background: none;
+border: none;
+color: white;
+font-size: 24px;
+cursor: pointer;
+margin: 6px;
+margin-right: 8px; 
+}
+.menu-icon {
+display: none;
+font-size: 30px;
+color: #fe8a06;
+cursor: pointer;
+margin: 5px;
+}
+/* end nav bar */
+/* Content Styling */
+.content {
+padding-top: 80px;
+}
+.logo h2{
+color: #fdf7f7;
+}
+.logo span{
+color:#fe8a06;
+}
+.carousel-item{
+background: #000000;
+}   
+/*start movies*/
+.movies {
+background-color: black;
+}
+.movies h1{
+color: white;
+margin: auto;
+border-bottom: 2px solid white;
+width: 180px;
+text-align: center;
+font-size: 38px;
+margin-bottom: 50px;
+}
+.movies span{
+color: #fe8a06;
+}
+.movies h1 i{
+color: white;
+ margin-left: 5px;
+}
+ .movies .carousel{
+width: 80%;
+text-align: center;
+align-items: center;
+margin: auto;
+/* padding: 30px; */
+}
+ .movies h2{
+ color: white;
+ margin: 40px auto;
+ text-align: center;
+}
+.movies img{
+width: 100%;
+height: 97%;
+}
+.card .booking .price{
+color: #fe8a06;
+font-size: 30px;
+}
+ .card .booking{ justify-content: space-between;
+     position: absolute; bottom: -100%; left: 0; width: 100%; 
+     backdrop-filter:blur(16px);
+      background: #0000009c; transition: 0.5;
+        display: none;
+}
+.card:hover .booking{
+display: inline;
+bottom: 0;
+}
+.booking p{
+color: white;
+font-weight: bold;
+}
+.booking p span{
+color:#fe8a06;
+}
+.card .btn{
+width: 100%;
+border: #fe8a06;
+background-color:black;
+color: #fe8a06;
+cursor: pointer;
+transition:0.3s ;
+-webkit-transition:0.3s ;
+-moz-transition:0.3s ;
+-ms-transition:0.3s ;
+-o-transition:0.3s ;
+}
+.card .btn:hover{
+    color: black;
+    background-color:#fe8a06;
+}
+/*scroll*/
+#btn{
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #fe8a06;
+    color:black ;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+}
+/*end movies*/
+.comming-soon{
+    padding: 20px;
+    text-align: center;
+}
+.comming-soon h2{
+    color: #f9fafa;
+    text-align:left;
+    margin: 20px;
+}
+.comming-soon h2 i{
+  color: #fe8a06;
+}
+.cards{
+ display: grid;
+ grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+ gap: 20px;
+ padding: 20px;
+ background-color: #000000;
+}
+.cards .card{
+    text-align: center;
+    background-color: #060707;
+    border-radius: 10px;
+    padding: 10px;
+   transition: transform .3s ease;
+}
+.cards .card video{
+width: auto;
+height: 100%;
+border-radius: 10px;
+}
+.cards .card video:hover{
+ transform: scale(1.05);
+}
+.cards .card h3{
+ color: #d45704;
+ font-size: 1.1rem;
+ margin-top: 10px;
+}
+/*start about us*/
+.about{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 30px auto;
+}
+.about h1{
+    color: white;
+    margin: auto;
+    border-bottom: 2px solid white;
+    width: 180px;
+    text-align: center;
+}
+.about h1 span{
+    color:#fe8a06 ;
+}
+.about img{
+    width: 100%;
+    height: 90%;
+}
+.about .content{
+    padding:15px ;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.about h2{
+    font-size: 20px;
+}
+.about p{
+    font-size: 18px;
+}
+/* .about button{
+    margin-left:2px ;
+    background-color: black;
+    color: white;
+    border: 2px solid #fe8a06;
+    transition: 0.5;
+    background-color:#fe8a06 ;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
+}
+.about button:hover{
+    color: white;
+    background-color: black;
+} */
+/* .about .social{
+ margin: 20px;  
+} */
+
+ .social i{
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid ;
+}
+ .social i:hover{
+    background-color:  #b8b7b620;
+}
+/*end about us*/
+/*see more*/
+.see{
+    text-align: center;
+    margin: auto;
+    padding: 30px 0;
+}
+.see-more{
+    text-decoration: none;
+    color: #fe8a06;
+    font-size: 24px;
+}
+.see-more:hover{
+    color: #d45704;
+}
+.actors{
+    margin: auto;
+    padding: 0 20px;
+    text-align: center;
+    gap: 5px;
+}
+.actors img{
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    height: 130px;
+    width: 130px;
+    transition: transform .3s ease,border-color .3 ease;
+  
+}
+.actors img:hover{
+    transform: scale(1.07);
+    border-color: #d45704;
+    -webkit-transform: scale(1.07);
+    -moz-transform: scale(1.07);
+    -ms-transform: scale(1.07);
+    -o-transform: scale(1.07);
+}
+footer{
+    background: #050505;
+}
+footer h2{
+ margin: 10px 50px;   
+ color: #f6ebe0;
+}
+footer h2 span{
+ color: #d45704;
+}
+footer .all-links{
+    display: flex;
+    padding: 10px;
+}
+footer .all-links .links {
+    margin: 10px ;
+    margin-left: 50px ;
+    padding: 5px;
+}
+footer a {
+ text-decoration: none;
+ text-align: center;
+ color: #f6ebe0;
+}
+footer b{
+    color: #f6ebe0;
+}
+footer  a:hover {
+color: #d45704;
+}
+/* Read this note before write any thing ====>>>>>>> */
+/* important note : please write your css code before this part i want this part in the end of the code*/
+/* Dark Mode */
+body .dark-mode {
+    background-color: #fefdfd;
+   }
+   body .dark-mode{
+    background: #faf9f8bd ;
+   }
+   body.dark-mode .navbar {
+    background-color: #faf9f8;
+   }
+   body.dark-mode .navbar .logo h2 {
+   color: #000000;
+   }
+   body.dark-mode .nav-links a {
+    color: #060707;
+   }
+   body.dark-mode .nav-links a:hover{
+    color: #fe8a06;
+   }
+   body.dark-mode .actions input {
+    background-color: #ffffff;
+    border: 1px solid #060707;
+    color: #050505;
+   }
+   body.dark-mode .carousel-item{
+    background: #f6ebe0;
+   }
+   body.dark-mode .actions i{
+   color: #000000;
+   }
+   body.dark-mode .movies{
+    background:  #faf9f8;
+    color: #000000;
+   }
+   body.dark-mode h2{
+    color: #000000;
+   }
+    body.dark-mode h1{
+    color: #000000;
+    border-bottom: 2px solid  black;
+   }
+   body.dark-mode h1 i{
+    color: black;
+   }
+   body.dark-mode{
+    background:  #f6ebe0;
+   }
+   body.dark-mode .actors{
+    background: #f9fafa;
+   }
+   body.dark-mode .about{
+   background: #f9fafa;
+   color: #000000;
+   }
+   body.dark-mode .comming-soon h2{
+      color: #000000;
+   }
+   body.dark-mode .comming-soon {
+    background: #f9fafa;
+  }
+   body.dark-mode .comming-soon .cards {
+     background: #f9fafa;
+   }
+   body.dark-mode .comming-soon .cards .card {
+    background: #cac8c6;
+   }
+   body.dark-mode .social{
+     background: #f9fafa;
+   }
+  body.dark-mode .social i:hover{
+    background-color:  #05050520;
+   }
+   body.dark-mode footer{
+   background: #cac8c6;
+   color: #000000;
+   }
+   body.dark-mode footer a{
+    color: #000000;
+   }
+   body.dark-mode footer a:hover{
+     color: #d45704;
+   }
+   body.dark-mode footer b{
+   color: #000000;
+   }
+   /* Responsive Design */
+   @media (max-width: 990px) {
+    .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: rgba(5, 5, 5, 0.855);
+    width: 100%;
+    margin-top: 20px;
+    }
+    .nav-links.show {
+        display: flex;
+    }
+    .menu-icon {
+        display: block;
+    }
+    body.dark-mode .nav-links a {
+     color: #f9fafa;
+    }
+    .actions input {
+        display: block;
+    }
+    footer .all-links{
+    display: block;
+    }
+}
+>>>>>>> 42691154a6e23c96e9e5cea1a77f4001023eec05
