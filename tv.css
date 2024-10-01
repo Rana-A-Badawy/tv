@@ -1,3 +1,71 @@
+<<<<<<< HEAD
+/*start cinema*/
+body {
+  background-color: #ddd6d6;
+}
+.container {
+  margin: 10%;
+  padding: 30px;
+  display: flex;
+  gap: 30px;
+}
+
+.card {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.container .card .apper_face img {
+  max-width: 100%;
+  
+}
+.container .card .apper_face {
+  position: relative;
+  background-color: #ffffff; 
+  display: flex;
+  z-index: 1;
+  /*transform: translateY(100px); */
+}
+
+
+.container .card:hover .apper_face {
+
+ /* transform: translateY(0); */
+}
+
+.container .card .apper_face .content i {/*---------------------------------------*/
+  max-width: 100px;
+}
+
+.container .card .heddin_face {
+  position: relative;
+  background-color: #fff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 15px rgba(73, 72, 72, 0.8); 
+  transform: translateY(-250px); 
+}
+
+.container .card:hover .heddin_face {
+  transform: translateY(0); 
+}
+.heddin_face button {
+  background-color: rgb(117, 38, 35);
+  border-radius: 5px;
+  color: #fff;
+  border :0;
+  width:100px;
+  height: 30px;
+}
+.heddin_face button:hover {
+  height: 40px;
+  background-color: rgb(83, 25, 23);
+}
+/*end cinema*/
+=======
 /* General Reset */
 * {
 margin: 0;
@@ -460,3 +528,4 @@ body .dark-mode {
     display: block;
     }
 }
+>>>>>>> 42691154a6e23c96e9e5cea1a77f4001023eec05
