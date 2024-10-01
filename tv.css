@@ -345,6 +345,9 @@ footer a {
  text-align: center;
  color: #f6ebe0;
 }
+footer b{
+    color: #f6ebe0;
+}
 footer  a:hover {
 color: #d45704;
 }
@@ -400,6 +403,10 @@ body .dark-mode {
    body.dark-mode .actors{
     background: #f9fafa;
    }
+   body.dark-mode .about{
+   background: #f9fafa;
+   color: #000000;
+   }
    body.dark-mode .comming-soon h2{
       color: #000000;
    }
@@ -411,6 +418,25 @@ body .dark-mode {
    }
    body.dark-mode .comming-soon .cards .card {
     background: #cac8c6;
+   }
+   body.dark-mode .social{
+     background: #f9fafa;
+   }
+  body.dark-mode .social i:hover{
+    background-color:  #05050520;
+   }
+   body.dark-mode footer{
+   background: #cac8c6;
+   color: #000000;
+   }
+   body.dark-mode footer a{
+    color: #000000;
+   }
+   body.dark-mode footer a:hover{
+     color: #d45704;
+   }
+   body.dark-mode footer b{
+   color: #000000;
    }
    /* Responsive Design */
    @media (max-width: 990px) {
