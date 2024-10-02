@@ -193,7 +193,11 @@ color:#fe8a06;
     background-color: #060707;
     border-radius: 10px;
     padding: 10px;
-   transition: transform .3s ease;
+    transition: transform .3s ease;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .cards .card video{
 width: auto;
@@ -202,6 +206,10 @@ border-radius: 10px;
 }
 .cards .card video:hover{
  transform: scale(1.05);
+ -webkit-transform: scale(1.05);
+ -moz-transform: scale(1.05);
+ -ms-transform: scale(1.05);
+ -o-transform: scale(1.05);
 }
 .cards .card h3{
  color: #d45704;
@@ -314,6 +322,10 @@ border-radius: 10px;
     -moz-transition: transform .3s ease,border-color .3 ease;
     -ms-transition: transform .3s ease,border-color .3 ease;
     -o-transition: transform .3s ease,border-color .3 ease;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 .actors img:hover{
     transform: scale(1.07);
