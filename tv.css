@@ -118,6 +118,7 @@ height: 97%;
 color: #fe8a06;
 font-size: 30px;
 }
+<<<<<<< HEAD
  .card .booking{
       /*justify-content: space-between;
       */position: absolute;
@@ -132,6 +133,13 @@ font-size: 30px;
       -moz-transition: 0.5;
       -ms-transition: 0.5;
       -o-transition: 0.5;
+=======
+ .card .booking{ justify-content: space-between;
+     position: absolute; bottom: -100%; left: 0; width: 100%; 
+     backdrop-filter:blur(16px);
+      background: #0000009c; transition: 0.5;
+        display: none;
+>>>>>>> 7b29cc7dfa86080a735acc19e5483ba18c152dd3
 }
 .card:hover .booking{
 display: inline;
@@ -144,7 +152,17 @@ font-weight: bold;
 .booking p span{
 color:#fe8a06;
 }
-.card .btn{ width: 100%; border: #fe8a06; background-color:black; color: #fe8a06; cursor: pointer; transition:0.3s ; -webkit-transition:; -moz-transition:; -ms-transition:; -o-transition:;
+.card .btn{
+width: 100%;
+border: #fe8a06;
+background-color:black;
+color: #fe8a06;
+cursor: pointer;
+transition:0.3s ;
+-webkit-transition:0.3s ;
+-moz-transition:0.3s ;
+-ms-transition:0.3s ;
+-o-transition:0.3s ;
 }
 .card .btn:hover{
     color: black;
@@ -158,15 +176,15 @@ color:#fe8a06;
     background-color: #fe8a06;
     color:black ;
     border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
     position: fixed;
     cursor: pointer;
     bottom: 10px;
     right: 10px;
     display: none;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 /*end movies*/
 .comming-soon{
@@ -479,4 +497,8 @@ body .dark-mode {
     footer .all-links{
     display: block;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7b29cc7dfa86080a735acc19e5483ba18c152dd3
