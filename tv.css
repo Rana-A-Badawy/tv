@@ -9,18 +9,20 @@ background: #000000;
 }
 /* Navbar Styling */
 .navbar {
-   display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    position: fixed; 
-    z-index: 1000;
-     top: 0; width: 100%; 
-     padding: 10px 20px;
-      background: rgb(0, 0, 0); 
-      transition: background 0.3s ease-in-out; 
-      -webkit-transition: background 0.3s ease-in-out; 
-      -moz-transition: background 0.3s ease-in-out; -ms-transition: background 0.3s ease-in-out;
-       -o-transition: background 0.3s ease-in-out;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      z-index: 1000;
+      top: 0;
+      width: 100%;
+      padding: 10px 20px;
+      background: rgb(0, 0, 0);
+      transition: background 0.3s ease-in-out;
+      -webkit-transition:;
+      -moz-transition:;
+      -ms-transition:;
+      -o-transition:;
 }
 .navbar.scrolled {
 position: sticky;
@@ -117,7 +119,7 @@ align-items: center; */
 margin: auto;
 /* padding: 30px; */
 }
- .movies h2{
+ .movies .main-title{
  color: white;
  margin: 40px auto;
  text-align: center;
@@ -138,6 +140,7 @@ font-size: 30px;
      backdrop-filter:blur(16px);
       background: #0000009c; transition: 0.5;
         display: none;
+        text-align: center;
 }
 .card:hover .booking{
 display: inline;
@@ -146,6 +149,7 @@ bottom: 0;
 .booking p{
 color: white;
 font-weight: bold;
+
 }
 .booking p span{
 color:#fe8a06;
