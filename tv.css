@@ -462,6 +462,9 @@ body .dark-mode {
    body.dark-mode .navbar {
     background-color: #cac8c6;
    }
+   body.dark-mode .nav-links {
+     background-color: #cac8c6d7;
+   }
    body.dark-mode .navbar .logo h2 {
    color: #000000;
    }
@@ -580,7 +583,7 @@ body .dark-mode {
         display: block;
     }
     body.dark-mode .nav-links a {
-     color: #f9fafa;
+     color: #000000;
     }
     .actions input {
         display: block;
