@@ -395,8 +395,12 @@ color: #d45704;
 }
 .container .card {
   border-radius: 8px;
-  overflow: hidden;  
+  overflow: hidden;
   text-align: center;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
 }
 .container .card .apper_face {
   position: relative;
@@ -422,14 +426,18 @@ color: #d45704;
 }
 .container .card .heddin_face {
   position: relative;
-  background-color: #060707; 
+  background-color: #060707;
   color: #f6ebe0;
-  /* display: flex; */
-  /* justify-content: center;
-  align-items: center; */
-  padding: 20px;
-  /* box-sizing: border-box; */
-  transform: translateY(-250px); 
+  /*display: flex;
+  *//*justify-content: center;
+  align-items: center;
+  */padding: 20px;
+  /*box-sizing: border-box;
+  */transform: translateY(-250px);
+  -webkit-transform: translateY(-250px);
+  -moz-transform: translateY(-250px);
+  -ms-transform: translateY(-250px);
+  -o-transform: translateY(-250px);
 }
 .container .card:hover .heddin_face {
   transform: translateY(0); 
@@ -439,12 +447,16 @@ color: #d45704;
   background-color: #d45704;
   border-radius: 5px;
   color: #fff;
-  border :0;
+  border:0;
   width:auto;
   height: 30px;
   padding: 5px;
   transition: transform .3s ease;
   margin:10px;
+  -webkit-transition: transform .3s ease;
+  -moz-transition: transform .3s ease;
+  -ms-transition: transform .3s ease;
+  -o-transition: transform .3s ease;
 }
 .heddin_face button:hover {
   transform: scale(1.08);
