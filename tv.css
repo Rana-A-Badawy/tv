@@ -630,6 +630,8 @@ section{
 section .header{
     text-align: center;
     padding-bottom: 60px;
+    background-color: #000;
+    text-align: center;
 }
 
 .header h2{
@@ -638,7 +640,7 @@ section .header{
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: white;
+    color: #f1f1f1;
 }
 
 .header h2::after{
@@ -650,13 +652,15 @@ section .header{
     display: block;
     width: 100px;
     height: 7px;
-    background:rgb(255, 154, 22) ;
+    background:#fe8a06; ;
     margin: auto;
 }
 
 .header p{
     margin-bottom: 0;
-    color:white;
+    color: #f1f1f1;
+
+
 }
 
 .container{
@@ -681,7 +685,7 @@ section .header{
 
 .info_container .info_item{
     padding: 20px;
-    background: rgb(255, 154, 22);
+    background:#fe8a06;;
     border-radius: 10px;
     margin-bottom: 20px;
     -webkit-border-radius: 10px;
@@ -780,7 +784,7 @@ textarea{
 }
 
 .btn button{
-    background: rgb(255, 154, 22);
+    background: #fe8a06;;
     border: 0;
     padding: 16px 45px;
     color: #f1f1f1;
