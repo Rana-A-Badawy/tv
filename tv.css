@@ -666,10 +666,10 @@ section .header{
     margin: auto;
     display: flex;
     transition: 0.4s all ease-in-out;
-    -webkit-transition:;
+    /* -webkit-transition:;
     -moz-transition:;
     -ms-transition:;
-    -o-transition:;
+    -o-transition:; */
 }
 
 .info_container{
@@ -719,10 +719,10 @@ section .header{
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    -webkit-border-radius:;
+    /* -webkit-border-radius:;
     -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -ms-border-radius: ;
+    -o-border-radius: ; */
 }
 
 .info_item:hover i{
