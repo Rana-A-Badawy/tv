@@ -227,7 +227,10 @@ transition:0.3s ;
 }
 .cards .card video:hover{
  transform: scale(1.05);
-
+ -webkit-transform:;
+ -moz-transform:;
+ -ms-transform:;
+ -o-transform:;
 }
 .cards .card h3{
  color: #d45704;
@@ -630,8 +633,6 @@ section{
 section .header{
     text-align: center;
     padding-bottom: 60px;
-    background-color: #000;
-    text-align: center;
 }
 
 .header h2{
@@ -640,7 +641,7 @@ section .header{
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #f1f1f1;
+    color: white;
 }
 
 .header h2::after{
@@ -652,15 +653,13 @@ section .header{
     display: block;
     width: 100px;
     height: 7px;
-    background:#fe8a06; ;
+    background:rgb(255, 154, 22) ;
     margin: auto;
 }
 
 .header p{
     margin-bottom: 0;
-    color: #f1f1f1;
-
-
+    color:white;
 }
 
 .container{
@@ -685,7 +684,7 @@ section .header{
 
 .info_container .info_item{
     padding: 20px;
-    background:#fe8a06;;
+    background: rgb(255, 154, 22);
     border-radius: 10px;
     margin-bottom: 20px;
     -webkit-border-radius: 10px;
@@ -784,7 +783,7 @@ textarea{
 }
 
 .btn button{
-    background: #fe8a06;;
+    background: rgb(255, 154, 22);
     border: 0;
     padding: 16px 45px;
     color: #f1f1f1;
