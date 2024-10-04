@@ -614,7 +614,8 @@ body .dark-mode {
 
 body{
     font-family: 'Montserrat', sans-serif;
-    background-color: #f1f1f1
+    background-color: black;
+    color: white;
 }
 
 section{
@@ -633,7 +634,7 @@ section .header{
     margin-bottom: 20px;
     padding-bottom: 20px;
     position: relative;
-    color: #000000;
+    color: white;
 }
 
 .header h2::after{
@@ -651,7 +652,7 @@ section .header{
 
 .header p{
     margin-bottom: 0;
-    color: #000000;
+    color:white;
 }
 
 .container{
@@ -661,15 +662,20 @@ section .header{
     margin: auto;
     display: flex;
     transition: 0.4s all ease-in-out;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 
 .info_container{
     padding: 20px;
     max-width: 35%;
     width: 100%;
-    background:rgb(0, 0, 0) ; 
+    background:rgb(0, 0, 0) ;
     border-radius: 10px 0 0 10px;
     color: #f1f1f1;
+ 
 }
 
 .info_container .info_item{
@@ -677,6 +683,10 @@ section .header{
     background: rgb(255, 154, 22);
     border-radius: 10px;
     margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 
 .info_container .info_item:last-child{
@@ -701,6 +711,14 @@ section .header{
     align-items: center;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 
 .info_item:hover i{
