@@ -625,6 +625,8 @@ section{
 section .header{
     text-align: center;
     padding-bottom: 60px;
+    background-color: #000;
+    text-align: center;
 }
 
 .header h2{
@@ -652,10 +654,6 @@ section .header{
 .header p{
     margin-bottom: 0;
     color: #f1f1f1;
-}
-
-.header{
-    background-color: #000;
 }
 
 .container{
