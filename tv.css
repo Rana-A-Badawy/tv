@@ -117,7 +117,7 @@ align-items: center; */
 margin: auto;
 /* padding: 30px; */
 }
- .movies h2{
+ .movies .main-title{
  color: white;
  margin: 40px auto;
  text-align: center;
@@ -138,6 +138,7 @@ font-size: 30px;
      backdrop-filter:blur(16px);
       background: #0000009c; transition: 0.5;
         display: none;
+        text-align: center;
 }
 .card:hover .booking{
 display: inline;
