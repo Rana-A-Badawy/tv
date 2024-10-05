@@ -1,17 +1,17 @@
 window.addEventListener('scroll', function() {
- const navbar = document.getElementById('navbar');
- if (window.scrollY > 0) {
-     navbar.classList.add('scrolled');
- } else {
-     navbar.classList.remove('scrolled');
- }
- if(scrollY>=200){
-    btn.style.display="block";
-   } 
-   else{
-    btn.style.display="none";
-   }
-});
+    const navbar = document.getElementById('navbar');
+    const btn = document.getElementById('btn');  
+    if (window.scrollY > 0) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+    if (window.scrollY >= 200) {
+      btn.style.display = "block";
+    } else {
+      btn.style.display = "none";
+    }
+  });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Toggle dark mode
 // Toggle dark mode
