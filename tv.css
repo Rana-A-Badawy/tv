@@ -586,6 +586,7 @@ form .row{
     align-items: center;
     gap: 30px;
 }
+
 form{
   padding-top: 100px;
 }
@@ -603,6 +604,21 @@ form .form_control{
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+
+}
+#bot{
+    width: 28%;
+    border: none;
+    height: auto;
+    padding: 1%;
+    margin-bottom: 4%;
+    margin-left: -3%;
+    background-color: #d45704;
+    border-radius: 5px solid;
+    -webkit-border-radius: 5px solid;
+    -moz-border-radius: 5px solid;
+    -ms-border-radius: 5px solid;
+    -o-border-radius: 5px solid;
 }
 .form_control:focus{
     border: 1px solid #d45704 ;

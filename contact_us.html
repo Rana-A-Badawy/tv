@@ -40,7 +40,7 @@
     <section class="contact">
         <div class="header">
             <h2>Contact Us</h2>
-            <p>Cenema OHROM is The Best Cenema in Egypt</p>
+            <p>Cinema OHROM is The Best Cenema in Egypt</p>
         </div>
         <div class="container">
             <div class="info_container">
@@ -59,7 +59,7 @@
                     </div>
                     <div class="information">
                         <h4>Email::</h4>
-                        <p>CenemaQena1#@google.com</p>
+                        <p>CinemaQena1#@google.com</p>
                     </div>
                 </div>
                 <div class="Ticket info_item">
@@ -96,26 +96,28 @@
                     </div>
                     <div class="information">
                         <h4>Facebook::</h4>
-                        <p>CenemaQena1#@facebook.com</p>
+                        <p>CinemaQena1#@facebook.com</p>
                     </div>
                 </div>
             </div>
             <div class="input_container">
                 <form action="#">
                     <div class="row">
-                        <input type="text" name="" id="" class="form_control" placeholder="Your Name">
-                        <input type="email" name="" id="" class="form_control" placeholder="Email Address">
+                        <input type="text" name="" id="name" class="form_control" placeholder="Your Name">
+                        <input type="email" name="" id="email" class="form_control" placeholder="Email Address">
                     </div>
-                    <input type="text" name="" id="" placeholder="subject"
+                    <div class="row">
+                    <input type="password" name="" id="pwd" placeholder="your password"
                     class="form_control" required>
-                    <textarea name="" id="" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
-                    <div class="btn"><button type="submit">Send Message</button></div> 
+                    <button  id="bot" data="show">show pwd</button>
+                    </div>
+                    <textarea name="" id="Message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
+                    <div class="btn" id="submit"><button type="submit">Send Message</button></div> 
                 </form>
             </div>
         </div>
         <br><br>
     </section>
-
     <!-- end contact us  -->
       
     <!-- start footer -->
@@ -195,6 +197,27 @@
         </footer>
 
         <!-- end footer -->
+         <script>
+            var pwd=document.getElementById('pwd');
+var  bot=document.getElementById('bot');
+
+bot.onclick=function(){
+ if(bot.getAttribute('data')=="show"){
+   pwd.setAttribute('type','text');
+   bot.setAttribute('data','hide');
+   bot.innerHTML='hide pwd';
+ }
+ else{
+   if(bot.getAttribute('data')=="hide"){
+       pwd.setAttribute('type','password');
+       bot.setAttribute('data','show');
+       bot.innerHTML='show pwd';
+ }
+}
+} 
+         </script>
+         
+        <script src="tv.js"></script>
 
 </body>
 </html>
