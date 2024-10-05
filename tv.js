@@ -12,12 +12,29 @@ window.addEventListener('scroll', function() {
     btn.style.display="none";
    }
 });
+////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Toggle dark mode
 // Toggle dark mode
 const themeToggle = document.getElementById('theme-toggle');
+
+// التحقق من التفضيل المحفوظ في localStorage عند تحميل الصفحة
+if (localStorage.getItem('theme') === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+
 themeToggle.addEventListener('click', () => {
- document.body.classList.toggle('dark-mode');
- document.body.style.background('dark-mode');
+    // تبديل كلاس الوضع الداكن
+    document.body.classList.toggle('dark-mode');
+
+    // تحديث قيمة localStorage بناءً على الوضع الحالي
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
 });
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Toggle mobile menu
 const menuIcon = document.getElementById('menu-icon');
 const navLinks = document.getElementById('nav-links');
