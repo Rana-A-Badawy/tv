@@ -107,16 +107,56 @@
                         <input type="email" name="" id="email" class="form_control" placeholder="Email Address">
                     </div>
                     <div class="row">
-                    <input type="password" name="" id="pwd" placeholder="your password"
+                    <input type="password" name="" id="password" placeholder="your password"
                     class="form_control" required>
                     <button  id="bot" data="show">show pwd</button>
                     </div>
-                    <textarea name="" id="Message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
-                    <div class="btn" id="submit"><button type="submit">Send Message</button></div> 
+                    <script>
+                        var password=document.getElementById('password');
+            var  bot=document.getElementById('bot');
+            
+            bot.onclick=function(){
+             if(bot.getAttribute('data')=="show"){
+               password.setAttribute('type','text');
+               bot.setAttribute('data','hide');
+               bot.innerHTML='hide pwd';
+             }
+             else{
+               if(bot.getAttribute('data')=="hide"){
+                   password.setAttribute('type','password');
+                   bot.setAttribute('data','show');
+                   bot.innerHTML='show pwd';
+             }
+            }
+            }  
+            
+                     </script>
+                    <textarea name="" id="message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
+                    <div class="btn" ><button type="submit" id="submit">Send Message</button></div> 
+                
                 </form>
+          
             </div>
         </div>
         <br><br>
+        <script>
+            var data=[];
+
+document.getElementById('submit').onclick= function(){
+     var newperson = {
+  name:document.getElementById('name').value,
+  email:document.getElementById('email').value,
+  pwd:document.getElementById('pwd').value,
+   message:document.getElementById('message').value,
+ 
+     }
+     data.push(newperson);
+     localStorage.setItem('person',JSON.stringify(data));
+
+     console.log(data);
+  }
+
+               </script>
     </section>
     <!-- end contact us  -->
       
@@ -197,27 +237,11 @@
         </footer>
 
         <!-- end footer -->
-         <script>
-            var pwd=document.getElementById('pwd');
-var  bot=document.getElementById('bot');
 
-bot.onclick=function(){
- if(bot.getAttribute('data')=="show"){
-   pwd.setAttribute('type','text');
-   bot.setAttribute('data','hide');
-   bot.innerHTML='hide pwd';
- }
- else{
-   if(bot.getAttribute('data')=="hide"){
-       pwd.setAttribute('type','password');
-       bot.setAttribute('data','show');
-       bot.innerHTML='show pwd';
- }
-}
-} 
-         </script>
-         
+     
+  
+
         <script src="tv.js"></script>
 
 </body>
-</html>
+</html> 
