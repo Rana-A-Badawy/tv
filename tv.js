@@ -36,3 +36,4 @@ const navLinks = document.getElementById('nav-links');
 menuIcon.addEventListener('click', () => {
  navLinks.classList.toggle('show');
 });
+
