@@ -14,7 +14,8 @@ background: #000000;
     align-items: center; 
     position: fixed; 
     z-index: 1000;
-     top: 0; width: 100%; 
+     top: 0; 
+     width: 100%; 
      padding: 10px 20px;
       background: rgb(0, 0, 0); 
       transition: background 0.3s ease-in-out; 
@@ -738,6 +739,9 @@ body .dark-mode {
    body.dark-mode .about{
    background: #f9fafa;
    color: #000000;
+   }
+   body.dark-mode .main-title{
+    color: #000;
    }
    body.dark-mode .comming-soon h2{
       color: #000000;
