@@ -14,7 +14,8 @@ background: #000000;
     align-items: center; 
     position: fixed; 
     z-index: 1000;
-     top: 0; width: 100%; 
+     top: 0; 
+     width: 100%; 
      padding: 10px 20px;
       background: rgb(0, 0, 0); 
       transition: background 0.3s ease-in-out; 
@@ -117,7 +118,7 @@ align-items: center; */
 margin: auto;
 /* padding: 30px; */
 }
- .movies h2{
+ .movies .main-title{
  color: white;
  margin: 40px auto;
  text-align: center;
@@ -138,6 +139,7 @@ font-size: 30px;
      backdrop-filter:blur(16px);
       background: #0000009c; transition: 0.5;
         display: none;
+        text-align: center;
 }
 .card:hover .booking{
 display: inline;
@@ -167,7 +169,7 @@ transition:0.3s ;
     background-color:#fe8a06;
 }
 /*scroll*/
-#btn{
+#ben{
     width: 30px;
     height: 30px;
     border: none;
@@ -214,16 +216,19 @@ transition:0.3s ;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-transition: transform .3s ease;
-    -moz-transition: transform .3s ease;
-    -ms-transition: transform .3s ease;
-    -o-transition: transform .3s ease;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 .cards .card video{ width: auto; height: 100%; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px;
 }
 .cards .card video:hover{
  transform: scale(1.05);
-
+ -webkit-transform: scale(1.05);
+ -moz-transform: scale(1.05);
+ -ms-transform: scale(1.05);
+ -o-transform: scale(1.05);
 }
 .cards .card h3{
  color: #d45704;
@@ -276,10 +281,10 @@ transition:0.3s ;
     -moz-border-radius:;
     -ms-border-radius:;
     -o-border-radius:;
-    -webkit-transition: 0.5;
-    -moz-transition: 0.5;
-    -ms-transition: 0.5;
-    -o-transition: 0.5;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 .about button:hover{
     color: white;
@@ -449,6 +454,218 @@ color: #d45704;
   margin: auto;
   color: #f6ebe0;
 }
+/* Contact Us */
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    color: white;
+} */
+section{
+    padding: 2px;
+    overflow: hidden;
+}
+section .header{
+    text-align: center;
+    padding-bottom: 60px;
+    background-color: #000;
+    text-align: center;
+}
+.header h2{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #f1f1f1;
+}
+.header h2::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100px;
+    height: 7px;
+    background:#fe8a06; ;
+    margin: auto;
+}
+.header p{
+    margin-bottom: 0;
+    color: #f1f1f1;
+}
+.container{
+    max-width: 1300px;
+    /* box-shadow: 0px 2px 25px rgb(0 0 0 / 10%); */
+    border-radius: 10px;
+    margin: auto;
+    display: flex;
+    transition: 0.4s all ease-in-out;
+    /* -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:; */
+}
+.info_container{
+    padding: 20px;
+    max-width: 35%;
+    width: 100%;
+    background:rgb(0, 0, 0) ;
+    border-radius: 10px 0 0 10px;
+    color: #f1f1f1;
+}
+.info_container .info_item{
+    padding: 20px;
+    background: #0d0e0e;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.info_container .info_item:last-child{
+    margin: 0;
+}
+.info_item .icon{
+    float: left;
+    clear: left;
+    margin-right: 15px;
+    height: 75px;
+}
+.info_item .icon i{
+    font-size: 20px;
+    color: #000000;
+    width: 44px;
+    height: 44px;
+    background-color: rgba(255, 255, 255, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    /*-webkit-border-radius:;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+     */:;
+    -webkit-border-radius: 50%;
+}
+.info_container .info_item:hover{
+  border: 1px solid #d45704;
+}
+.info_item:hover i{
+    background: #d45704;
+}
+.information h4{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.information p{
+    font-size: 15px;
+    line-height: 1.7;
+}
+.input_container{
+    max-width: 65%;
+    width: 100%;
+    padding: 30px;
+    background-color: #000000;
+    /* border: 3px solid #f1f1f1; */
+    justify-content: center;
+    align-items: center;
+}
+form .row{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+form{
+  padding-top: 100px;
+}
+form .form_control{
+    border: 1px solid #000;
+    outline: none;
+    font-size: 14px;
+    padding: 12px 15px;
+    color: #f1f1f1;
+    width: 100%;
+    margin-bottom: 25px;
+    transition: 0.3s;
+    line-height: 1.5;
+    background-color: #0d0e0e;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+#bot{
+    width: 28%;
+    border: none;
+    height: auto;
+    padding: 1%;
+    margin-bottom: 4%;
+    margin-left: -3%;
+    background-color: #d45704;
+    border-radius: 5px solid;
+    -webkit-border-radius: 5px solid;
+    -moz-border-radius: 5px solid;
+    -ms-border-radius: 5px solid;
+    -o-border-radius: 5px solid;
+}
+.form_control:focus{
+    border: 1px solid #d45704 ;
+    background: #1a1a1a;
+}
+textarea{
+    resize: none;
+    font-family: sans-serif;
+}
+.btn{
+    width: 100%;
+    text-align: center;
+}
+.btn button{
+    background: #d45704;
+    border: 0;
+    padding: 16px 45px;
+    /* color: #f1f1f1; */
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 400;
+    /* transition: 0.4s; */
+    background-color: #d45704;
+    color: #fff;
+    border :0;
+    padding: 13px;
+    transition: transform .3s ease;
+    margin: 20px;
+}
+.btn button:hover{
+    transform: scale(1.08);
+    background-color: #fb6d07;
+}
 /*end cinema*/
 /* Read this note before write any thing ====>>>>>>> */
 /* important note : please write your css code before this part i want this part in the end of the code*/
@@ -460,7 +677,10 @@ body .dark-mode {
     background: #ffffffbd ;
    }
    body.dark-mode .navbar {
-    background-color: #faf9f8;
+    background-color: #cac8c6;
+   }
+   body.dark-mode .nav-links {
+     background-color: #cac8c6d7;
    }
    body.dark-mode .navbar .logo h2 {
    color: #000000;
@@ -520,6 +740,9 @@ body .dark-mode {
    background: #f9fafa;
    color: #000000;
    }
+   body.dark-mode .main-title{
+    color: #000;
+   }
    body.dark-mode .comming-soon h2{
       color: #000000;
    }
@@ -550,7 +773,34 @@ body .dark-mode {
    }
  body.dark-mode .container {
     color: #000000;
- }
+}
+body.dark-mode form .input_container{
+background: #fdf7f7;
+}
+ body.dark-mode form .form_control{
+   background: #cac8c6;
+   color: #000;
+}
+body.dark-mode .info_container .info_item{
+ background: #cac8c6;
+ color: #000000;
+}
+body.dark-mode .info_container{
+background: #fdf7f7;
+}
+body.dark-mode .form_control:focus{
+ border: 2px #d45704 solid;
+ background: #ece8e5;
+}
+body.dark-mode section .header{
+background: #fdf7f7;
+}
+body.dark-mode .header p{
+color: #000;
+}
+body.dark-mode .input_container{
+background: #fdf7f7;
+}
    .aaa{
     color: #fdf7f7;
     text-decoration: none;
@@ -580,7 +830,7 @@ body .dark-mode {
         display: block;
     }
     body.dark-mode .nav-links a {
-     color: #f9fafa;
+     color: #000000;
     }
     .actions input {
         display: block;
@@ -601,6 +851,7 @@ body .dark-mode {
    .container .card:hover .heddin_face {
      margin-bottom: 40px;
    }
+<<<<<<< HEAD
 
 }
 
@@ -802,6 +1053,8 @@ textarea{
 .btn button:hover{
     background:#f1f1f1 ;
     color: #000000;
+=======
+>>>>>>> f8f13af054ca8754ace7efb0a3fae9e691f62d7c
 }
 @media screen and (max-width: 1400px) {
     .container{
@@ -811,32 +1064,26 @@ textarea{
         font-size: 13px;
     }
 }
-
 @media screen and (max-width: 1200px){
     .container{
         max-width: 900px;
     }
 }
-
 @media screen and (max-width: 991px){
     .container{
         max-width: 768px;
         flex-direction: column;
     }
-
     .info_container, .input_container{
         max-width: 100%;
     }
-
     .info_container{
         border-radius: 10px 10px 0 0;
     }
-
     .input_container{
         padding-top: 50px;
     }
 }
-
 @media screen and (max-width: 768px){
     selection{
         padding: 50px 5px;
