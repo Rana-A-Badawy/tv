@@ -13,21 +13,22 @@
 <body>
         <!-- Navbar -->
     <nav id="navbar" class="navbar">
-    <div class="logo">
-        <h2>OH<span>ROM</pan></h2>
-    </div>
-    <ul class="nav-links" id="nav-links">
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./movies.html">Movies</a></li>
-        <li><a href="./cinemas.html">Cinemas</a></li>
-        <li><a style="color: #fe8a06;" href="./contact_us.html">Contact Us</a></li>
-        <li><a href="./about_us.html">About </a></li>
-    </ul>
-    <div class="actions">
-        <input type="text" id="search" placeholder="Search...">
-        <button id="theme-toggle"><i class="fa-solid fa-circle-half-stroke"></i></button>
-    </div>
-    <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="logo">
+           <h2>OH<span>ROM</pan></h2>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./movies.html">Movies</a></li>
+            <li><a href="./cinemas.html">Cinemas</a></li>
+            <li><a style="color: #fe8a06;" href="./contact_us.html">Contact Us</a></li>
+            <li><a href="./about_us.html">About </a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+        <div class="actions">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="theme-toggle3"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
     </nav>
     <script src="tv.js"></script>
     <!--end navbar-->
@@ -41,7 +42,7 @@
 
     <section class="contact">
         <div class="header">
-            <h2>Contact Us</h2>
+            <h2>Contact Us <i class="fa-solid fa-phone-volume"></i></h2>
             <p>Cinema OHROM is The Best Cenema in Egypt</p>
         </div>
         <div class="container">
@@ -55,15 +56,17 @@
                         <p>Qena, Next to The Dolphin Fountain</p>
                     </div>
                 </div>
-                <div class="email info_item">
+
+                <div class="Ticket info_item">
                     <div class="icon">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="information">
                         <h4>Email::</h4>
-                        <p>CinemaQena1#@google.com</p>
+                        <p>CinimaQena1#@google.com</p>
                     </div>
                 </div>
+
                 <div class="Ticket info_item">
                     <div class="icon">
                         <i class="fa-solid fa-ticket"></i>
@@ -103,62 +106,73 @@
                 </div>
             </div>
             <div class="input_container">
-                <form action="#">
+                <form action="#" id="form" >
                     <div class="row">
-                        <input type="text" name="" id="name" class="form_control" placeholder="Your Name">
+                        <input type="text" name="" id="nam" class="form_control" placeholder="Your Name">
                         <input type="email" name="" id="email" class="form_control" placeholder="Email Address">
                     </div>
                     <div class="row">
-                    <input type="password" name="" id="password" placeholder="your password"
+                    <input type="password" name="" id="pwd" placeholder="your password"
                     class="form_control" required>
-                    <button  id="bot" data="show">show pwd</button>
+                    <!-- <button  id="bot" data="show">show pwd</button> -->
                     </div>
-                    <script>
-                        var password=document.getElementById('password');
-            var  bot=document.getElementById('bot');
-            
-            bot.onclick=function(){
-             if(bot.getAttribute('data')=="show"){
-               password.setAttribute('type','text');
-               bot.setAttribute('data','hide');
-               bot.innerHTML='hide pwd';
-             }
-             else{
-               if(bot.getAttribute('data')=="hide"){
-                   password.setAttribute('type','password');
-                   bot.setAttribute('data','show');
-                   bot.innerHTML='show pwd';
-             }
-            }
-            }  
-            
-                     </script>
+
                     <textarea name="" id="message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
-                    <div class="btn" ><button type="submit" id="submit">Send Message</button></div> 
+                    <div class="btn" ><button type="submit" id="submit" >Send Message</button></div> 
                 
-                </form>
-          
+                </form >
+                <!-- <script>
+                    var pwd=document.getElementById('pwd');
+        var  bot=document.getElementById('bot');
+        var nam=document.getElementById('nam');
+        var email=document.getElementById('email');
+        var message=document.getElementById('message');
+        var submit=document.getElementById('submit');
+        
+        // bot.onclick=function(){
+        //  if(bot.getAttribute('data')=="show"){
+        //    pwd.setAttribute('type','text');
+        //    bot.setAttribute('data','hide');
+        //    bot.innerHTML='hide pwd';
+        //  }
+        //  else{
+        //    if(bot.getAttribute('data')=="hide"){
+        //        pwd.setAttribute('type','password');
+        //        bot.setAttribute('data','show');
+        //        bot.innerHTML='show pwd';
+        //  }
+        // }
+        // }  
+        let data;
+if(localStorage.person!=null){
+ data=JSON.parse(localStorage.person)
+}
+else{
+ data=[];
+}
+submit.onclick=function(){
+ let newperson={
+   nam:nam.value,
+   email:email.value,
+   pwd:pwd.value,
+   message:message.value,
+ }
+ data.push(newperson);
+ localStorage.setItem('person',JSON.stringify(data))
+ console.log(data);
+clear()
+}
+function clear(){
+ nam.value='';
+ email.value='';
+ pwd.value='';
+ message.value='';
+}
+                 </script> -->
             </div>
         </div>
         <br><br>
-        <script>
-            const data=[];
 
-document.getElementById('submit').onclick= function(){
-    const newperson = {
-  name:document.getElementById('name').value,
-  email:document.getElementById('email').value,
-  pwd:document.getElementById('pwd').value,
-   message:document.getElementById('message').value,
- 
-     }
-     data.push(newperson);
-     localStorage.setItem('person',JSON.stringify(data));
-
-     console.log(data);
-  }
-
-               </script>
     </section>
     <!-- end contact us  -->
       
