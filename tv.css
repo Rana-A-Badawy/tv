@@ -264,6 +264,7 @@ transition:0.3s ;
 }
 .about p{
     font-size: 18px;
+    color: #ece8e5;
 }
 /* .about button{
     margin-left:2px ;
@@ -336,7 +337,6 @@ transition:0.3s ;
     height : 40px;
     border-bottom: 1px solid beige;
     color :beige;
-
  }
  .glass_login .password {
      background: transparent;
@@ -773,6 +773,9 @@ body .dark-mode {
     background-color: #ffffff;
     border: 1px solid #060707;
     color: #050505;
+   }
+   body.dark-mode .about p{
+    color: #000;
    }
    body.dark-mode .carousel-item{
     background: #f6ebe0;
