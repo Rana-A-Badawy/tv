@@ -216,10 +216,6 @@ transition:0.3s ;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 .cards .card video{ width: auto; height: 100%; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px;
 }
@@ -554,11 +550,6 @@ section .header{
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    /*-webkit-border-radius:;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-     */:;
     -webkit-border-radius: 50%;
 }
 .info_container .info_item:hover{
@@ -851,7 +842,6 @@ background: #fdf7f7;
    .container .card:hover .heddin_face {
      margin-bottom: 40px;
    }
-<<<<<<< HEAD
 
 }
 
@@ -917,10 +907,6 @@ section .header{
     margin: auto;
     display: flex;
     transition: 0.4s all ease-in-out;
-    -webkit-transition:;
-    -moz-transition:;
-    -ms-transition:;
-    -o-transition:;
 }
 
 .info_container{
@@ -972,10 +958,6 @@ section .header{
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius: ;
-    -o-border-radius: ;
 }
 
 .info_item:hover i{
@@ -1053,8 +1035,6 @@ textarea{
 .btn button:hover{
     background:#f1f1f1 ;
     color: #000000;
-=======
->>>>>>> f8f13af054ca8754ace7efb0a3fae9e691f62d7c
 }
 @media screen and (max-width: 1400px) {
     .container{
