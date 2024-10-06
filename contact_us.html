@@ -12,22 +12,24 @@
 <body>
         <!-- Navbar -->
     <nav id="navbar" class="navbar">
-    <div class="logo">
-        <h2>OH<span>ROM</pan></h2>
-    </div>
-    <ul class="nav-links" id="nav-links">
-        <li><a href="./home.html">Home</a></li>
-        <li><a href="./movies.html">Movies</a></li>
-        <li><a href="./cinemas.html">Cinemas</a></li>
-        <li><a style="color: #fe8a06;" href="./contact_us.html">Contact Us</a></li>
-        <li><a href="./about_us.html">About </a></li>
-    </ul>
-    <div class="actions">
-        <input type="text" id="search" placeholder="Search...">
-        <button id="theme-toggle3"><i class="fa-solid fa-circle-half-stroke"></i></button>
-    </div>
-    <div class="menu-icon" id="menu-icon">&#9776;</div>
+        <div class="logo">
+           <h2>OH<span>ROM</pan></h2>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./movies.html">Movies</a></li>
+            <li><a href="./cinemas.html">Cinemas</a></li>
+            <li><a style="color: #fe8a06;" href="./contact_us.html">Contact Us</a></li>
+            <li><a href="./about_us.html">About </a></li>
+            <li><a href="./login.html">Login</a></li>
+        </ul>
+        <div class="actions">
+            <input type="text" id="search" placeholder="Search...">
+            <button id="theme-toggle3"><i class="fa-solid fa-circle-half-stroke"></i></button>
+        </div>
+        <div class="menu-icon" id="menu-icon">&#9776;</div>
     </nav>
+    <script src="tv.js"></script>
     <!--end navbar-->
     
     <!-- start contact us -->
@@ -39,7 +41,7 @@
 
     <section class="contact">
         <div class="header">
-            <h2>Contact Us</h2>
+            <h2>Contact Us <i class="fa-solid fa-phone-volume"></i></h2>
             <p>Cinema OHROM is The Best Cenema in Egypt</p>
         </div>
         <div class="container">
@@ -53,15 +55,17 @@
                         <p>Qena, Next to The Dolphin Fountain</p>
                     </div>
                 </div>
-                <div class="email info_item">
+
+                <div class="Ticket info_item">
                     <div class="icon">
                         <i class="fa-solid fa-envelope"></i>
                     </div>
                     <div class="information">
                         <h4>Email::</h4>
-                        <p>CinemaQena1#@google.com</p>
+                        <p>CinimaQena1#@google.com</p>
                     </div>
                 </div>
+
                 <div class="Ticket info_item">
                     <div class="icon">
                         <i class="fa-solid fa-ticket"></i>
@@ -109,17 +113,14 @@
                     <div class="row">
                     <input type="password" name="" id="pwd" placeholder="your password"
                     class="form_control" required>
-                    <button  id="bot" data="show">show pwd</button>
+                    <!-- <button  id="bot" data="show">show pwd</button> -->
                     </div>
-                    <script>
-              
-            
-                     </script>
+
                     <textarea name="" id="message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
                     <div class="btn" ><button type="submit" id="submit" >Send Message</button></div> 
                 
                 </form >
-                <script>
+                <!-- <script>
                     var pwd=document.getElementById('pwd');
         var  bot=document.getElementById('bot');
         var nam=document.getElementById('nam');
@@ -166,7 +167,7 @@ function clear(){
  pwd.value='';
  message.value='';
 }
-                 </script>
+                 </script> -->
             </div>
         </div>
         <br><br>

@@ -301,6 +301,70 @@ transition:0.3s ;
     background-color:  #b8b7b620;
 }
 /*end about us*/
+/*start login*/
+.glass_login {
+    width: 50%;
+    height: 80%;
+    background: rgba(255,255,255,0.1);
+    border-radius: 20px;
+    box-shadow: 5px 5px 12px #00000035;
+    border-top: 2px solid #FFFFFF75;
+    border-left: 2px solid #FFFFFF75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .glass_login h1 , p , a{
+    color: beige;
+ } 
+.glass_login h1 {
+    padding: 20px;
+    text-align: center;
+ }
+ .glass_login input {
+    width: 100%;
+    margin: 10px 0;
+ }
+ .glass_login label {
+    color: beige;
+    font-weight: bold;
+ }
+ .glass_login .text{
+    background: transparent;
+    border: none;
+    outline: none;
+    height : 40px;
+    border-bottom: 1px solid beige;
+    color :beige;
+
+ }
+ .glass_login .password {
+     background: transparent;
+    border: none;
+    outline: none;
+    height : 40px;
+    border-bottom: 1px solid beige;
+    color :beige;
+
+ }
+ .glass_login .submit {
+    border: none;
+    outline: none;
+    color :beige;
+    height : 40px;
+    background: #d45704;
+    border-radius: 15px;
+    transition: 0.9s ease;
+ }
+ .glass_login .submit:hover {
+    transform: scale(1.07);
+    background: #fe8a06;
+ }
+ .glass_login p a:hover{
+   color: #d45704 ;
+ }
+
+/*end login*/
 /*see more*/
 .see{
     text-align: center;
@@ -401,6 +465,12 @@ color: #d45704;
   text-align: center;
   align-items: center;
   justify-content: center;
+  border-top:  1px ;
+  border-left:  1px ;
+  border-right:  1px ;
+  border-bottom: 0 ;
+  border-style: solid;
+  border-color: #d45704;
   /*transform: translateY(100px); */
 }
 .container .card .apper_face img {
@@ -418,12 +488,21 @@ color: #d45704;
   position: relative;
   background-color: #060707; 
   color: #f6ebe0;
+  border-top:  0px ;
+  border-left:  1px ;
+  border-right:  1px ;
+  border-bottom: 1px;
+  border-style: solid;
+  border-color: #d45704;
   /* display: flex; */
   /* justify-content: center;
   align-items: center; */
   padding: 20px;
   /* box-sizing: border-box; */
   transform: translateY(-250px); 
+}
+.container .card .heddin_face p {
+ color: white;
 }
 .container .card:hover .heddin_face {
   transform: translateY(0); 
@@ -486,9 +565,9 @@ section .header{
     right: 0;
     bottom: 0;
     display: block;
-    width: 100px;
-    height: 7px;
-    background:#fe8a06; ;
+    width: 160px;
+    height: 3px;
+    background:#fe8a06; 
     margin: auto;
 }
 .header p{
@@ -525,6 +604,7 @@ section .header{
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    color: #ece8e5;
 }
 .info_container .info_item:last-child{
     margin: 0;
@@ -571,6 +651,7 @@ section .header{
 .information p{
     font-size: 15px;
     line-height: 1.7;
+    color:#ece8e5;
 }
 .input_container{
     max-width: 65%;
@@ -662,6 +743,7 @@ textarea{
     transform: scale(1.08);
     background-color: #fb6d07;
 }
+ 
 /*end cinema*/
 /* Read this note before write any thing ====>>>>>>> */
 /* important note : please write your css code before this part i want this part in the end of the code*/
@@ -698,6 +780,9 @@ body .dark-mode {
    body.dark-mode .actions i{
    color: #000000;
    }
+   body.dark-mode .container .card .heddin_face p {
+    color: #000;
+   }
    body.dark-mode .movies{
     background:  #faf9f8;
     color: #000000;
@@ -707,10 +792,21 @@ body .dark-mode {
    }
     body.dark-mode h1{
     color: #000000;
-    border-bottom: 2px solid  black;
+    /* border-bottom: 2px solid  black; */
+   }
+   body.dark-mode .information p{
+    color: #000;
    }
    body.dark-mode .container .card .apper_face {
      background: #cac8c6;
+   }
+   body.dark-mode .glass_login .text, .glass_login .password{
+    border-bottom: 1px solid black;
+    color: #000000;
+   }
+   
+   body.dark-mode .glass_login label {
+     color: #000;
    }
   body.dark-mode .container .card .heddin_face {
   background: #cac8c6;
@@ -723,6 +819,14 @@ body .dark-mode {
     background:  #faf9f8;
     color: #000000;
    }
+   body.dark-mode .glass_login .password   {
+  color: black;
+  border-bottom: 1px solid black;
+ }
+ body.dark-mode .glass_login .email  {
+    color: black;
+    border-bottom: 1px solid black;
+}
    body.dark-mode .aaa{
     color: #000000;
    }
@@ -736,6 +840,9 @@ body .dark-mode {
    background: #f9fafa;
    color: #000000;
    }
+   body.dark-mode .glass_login h1 , p , a{
+     color: #000;
+ }
    body.dark-mode .main-title{
     color: #000;
    }
@@ -787,6 +894,16 @@ background: #fdf7f7;
 body.dark-mode .form_control:focus{
  border: 2px #d45704 solid;
  background: #ece8e5;
+}
+body.dark-mode .glass_login p 
+{
+    color: #000;
+}
+body.dark-mode .glass_login  a{
+    color: #000;
+}
+body.dark-mode .glass_login  a:hover{
+ color: #d45704;
 }
 body.dark-mode section .header{
 background: #fdf7f7;

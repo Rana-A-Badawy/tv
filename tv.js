@@ -15,19 +15,19 @@ themeToggle3.addEventListener('click', () => {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 window.addEventListener('scroll', function() {
     const navbar = document.getElementById('navbar');
-    const btn = document.getElementById('btn');
+    // const btn = document.getElementById('btn');
 
-    if (window.scrollY > 0) {
+    // if (window.scrollY > 0) {
         navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
-    }
+    // } else {
+    //     navbar.classList.remove('scrolled');
+    // }
 
-    if (window.scrollY >= 200) {
-        btn.style.display = "block";
-    } else {
-        btn.style.display = "none";
-    }
+    // if (window.scrollY >= 200) {
+    //     btn.style.display = "block";
+    // } else {
+    //     btn.style.display = "none";
+    // }
 });
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Toggle mobile menu
