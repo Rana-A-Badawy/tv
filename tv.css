@@ -314,6 +314,7 @@ transition:0.3s ;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px;
  }
  .glass_login h1 , p , a{
     color: beige;
@@ -942,6 +943,9 @@ background: #fdf7f7;
     .nav-links.show {
         display: flex;
     }
+.glass_login {
+width: 90%;
+}
     .menu-icon {
         display: block;
     }
