@@ -169,7 +169,7 @@ transition:0.3s ;
     background-color:#fe8a06;
 }
 /*scroll*/
-#btn{
+#ben{
     width: 30px;
     height: 30px;
     border: none;
@@ -216,16 +216,19 @@ transition:0.3s ;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
-    -webkit-transition: transform .3s ease;
-    -moz-transition: transform .3s ease;
-    -ms-transition: transform .3s ease;
-    -o-transition: transform .3s ease;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 .cards .card video{ width: auto; height: 100%; border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px; -ms-border-radius: 10px; -o-border-radius: 10px;
 }
 .cards .card video:hover{
  transform: scale(1.05);
-
+ -webkit-transform: scale(1.05);
+ -moz-transform: scale(1.05);
+ -ms-transform: scale(1.05);
+ -o-transform: scale(1.05);
 }
 .cards .card h3{
  color: #d45704;
@@ -278,10 +281,10 @@ transition:0.3s ;
     -moz-border-radius:;
     -ms-border-radius:;
     -o-border-radius:;
-    -webkit-transition: 0.5;
-    -moz-transition: 0.5;
-    -ms-transition: 0.5;
-    -o-transition: 0.5;
+    -webkit-transition:;
+    -moz-transition:;
+    -ms-transition:;
+    -o-transition:;
 }
 .about button:hover{
     color: white;
@@ -551,10 +554,12 @@ section .header{
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
-    /* -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius: ;
-    -o-border-radius: ; */
+    /*-webkit-border-radius:;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+     */:;
+    -webkit-border-radius: 50%;
 }
 .info_container .info_item:hover{
   border: 1px solid #d45704;
@@ -605,7 +610,14 @@ form .form_control{
     border-radius: 5px;
     justify-content: center;
     align-items: center;
-
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
 }
 #bot{
     width: 28%;

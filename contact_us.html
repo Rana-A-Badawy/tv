@@ -101,9 +101,9 @@
                 </div>
             </div>
             <div class="input_container">
-                <form action="#">
+                <form action="#" id="form" >
                     <div class="row">
-                        <input type="text" name="" id="name" class="form_control" placeholder="Your Name">
+                        <input type="text" name="" id="nam" class="form_control" placeholder="Your Name">
                         <input type="email" name="" id="email" class="form_control" placeholder="Email Address">
                     </div>
                     <div class="row">
@@ -111,12 +111,66 @@
                     class="form_control" required>
                     <button  id="bot" data="show">show pwd</button>
                     </div>
-                    <textarea name="" id="Message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
-                    <div class="btn" id="submit"><button type="submit">Send Message</button></div> 
-                </form>
+                    <script>
+              
+            
+                     </script>
+                    <textarea name="" id="message" cols="" rows="7" class="form_control" placeholder="Message" required></textarea>
+                    <div class="btn" ><button type="submit" id="submit" >Send Message</button></div> 
+                
+                </form >
+                <script>
+                    var pwd=document.getElementById('pwd');
+        var  bot=document.getElementById('bot');
+        var nam=document.getElementById('nam');
+        var email=document.getElementById('email');
+        var message=document.getElementById('message');
+        var submit=document.getElementById('submit');
+        
+        // bot.onclick=function(){
+        //  if(bot.getAttribute('data')=="show"){
+        //    pwd.setAttribute('type','text');
+        //    bot.setAttribute('data','hide');
+        //    bot.innerHTML='hide pwd';
+        //  }
+        //  else{
+        //    if(bot.getAttribute('data')=="hide"){
+        //        pwd.setAttribute('type','password');
+        //        bot.setAttribute('data','show');
+        //        bot.innerHTML='show pwd';
+        //  }
+        // }
+        // }  
+        let data;
+if(localStorage.person!=null){
+ data=JSON.parse(localStorage.person)
+}
+else{
+ data=[];
+}
+submit.onclick=function(){
+ let newperson={
+   nam:nam.value,
+   email:email.value,
+   pwd:pwd.value,
+   message:message.value,
+ }
+ data.push(newperson);
+ localStorage.setItem('person',JSON.stringify(data))
+ console.log(data);
+clear()
+}
+function clear(){
+ nam.value='';
+ email.value='';
+ pwd.value='';
+ message.value='';
+}
+                 </script>
             </div>
         </div>
         <br><br>
+
     </section>
     <!-- end contact us  -->
       
@@ -197,27 +251,11 @@
         </footer>
 
         <!-- end footer -->
-         <script>
-            var pwd=document.getElementById('pwd');
-var  bot=document.getElementById('bot');
 
-bot.onclick=function(){
- if(bot.getAttribute('data')=="show"){
-   pwd.setAttribute('type','text');
-   bot.setAttribute('data','hide');
-   bot.innerHTML='hide pwd';
- }
- else{
-   if(bot.getAttribute('data')=="hide"){
-       pwd.setAttribute('type','password');
-       bot.setAttribute('data','show');
-       bot.innerHTML='show pwd';
- }
-}
-} 
-         </script>
-         
+     
+  
+
         <script src="tv.js"></script>
 
 </body>
-</html>
+</html> 
