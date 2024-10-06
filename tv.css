@@ -630,6 +630,11 @@ section .header{
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
+    /*-webkit-border-radius:;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+     */
     -webkit-border-radius: 50%;
 }
 .info_container .info_item:hover{
@@ -770,7 +775,7 @@ body .dark-mode {
     color: #050505;
    }
    body.dark-mode .about p{
-    color: #000;
+    color: #f1f1f1;
    }
    body.dark-mode .carousel-item{
     background: #f6ebe0;
@@ -962,199 +967,6 @@ background: #fdf7f7;
    .container .card:hover .heddin_face {
      margin-bottom: 40px;
    }
-
-}
-
-
-/* Contact Us */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body{
-    font-family: 'Montserrat', sans-serif;
-    background-color: black;
-    color: white;
-}
-
-section{
-    padding: 2px;
-    overflow: hidden;
-}
-
-section .header{
-    text-align: center;
-    padding-bottom: 60px;
-    background-color: #000;
-    text-align: center;
-}
-
-.header h2{
-    font-size: 32px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    position: relative;
-    color: #f1f1f1;
-}
-
-.header h2::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: block;
-    width: 100px;
-    height: 7px;
-    background:#fe8a06; ;
-    margin: auto;
-}
-
-.header p{
-    margin-bottom: 0;
-    color: #f1f1f1;
-
-
-}
-
-.container{
-    max-width: 1300px;
-    box-shadow: 0px 2px 25px rgb(0 0 0 / 10%);
-    border-radius: 10px;
-    margin: auto;
-    display: flex;
-    transition: 0.4s all ease-in-out;
-}
-
-.info_container{
-    padding: 20px;
-    max-width: 35%;
-    width: 100%;
-    background:rgb(0, 0, 0) ;
-    border-radius: 10px 0 0 10px;
-    color: #f1f1f1;
-    border: 3px solid #f1f1f1;
-
- 
-}
-
-.info_container .info_item{
-    padding: 20px;
-    background:#fe8a06;;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-
-.info_container .info_item:last-child{
-    margin: 0;
-}
-
-.info_item .icon{
-    float: left;
-    clear: left;
-    margin-right: 15px;
-    height: 75px;
-}
-
-.icon i{
-    font-size: 20px;
-    color: #000000;
-    width: 44px;
-    height: 44px;
-    background-color: rgba(255, 255, 255, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -ms-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-}
-
-.info_item:hover i{
-    background:#f1f1f1;
-    color:rgb(218, 124, 0);
-}
-
-.information h4{
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 5px;
-}
-
-.information p{
-    font-size: 15px;
-    line-height: 1.7;
-}
-
-.input_container{
-    max-width: 65%;
-    width: 100%;
-    padding: 30px;
-    background-color: #000000;
-    border: 3px solid #f1f1f1;
-
-}
-
-form .row{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-form .form_control{
-    border: 1px solid #000;
-    outline: none;
-    font-size: 14px;
-    padding: 12px 15px;
-    color: rgb(217, 123, 0);;
-    width: 100%;
-    margin-bottom: 25px;
-    transition: 0.3s;
-    line-height: 1.5;
-    background-color:#f1f1f1 ;
-}
-
-.form_control:focus{
-    border-color: rgb(254, 203, 135);
-}
-
-textarea{
-    resize: none;
-    font-family: sans-serif;
-}
-
-.btn{
-    width: 100%;
-    text-align: center;
-}
-
-.btn button{
-    background: #fe8a06;;
-    border: 0;
-    padding: 16px 45px;
-    color: #f1f1f1;
-    border-radius: 50px;
-    cursor: pointer;
-    font-size: 17px;
-    font-weight: 400;
-    transition: 0.4s;
-}
-
-.btn button:hover{
-    background:#f1f1f1 ;
-    color: #000000;
 }
 @media screen and (max-width: 1400px) {
     .container{
