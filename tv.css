@@ -753,9 +753,6 @@ textarea{
 body .dark-mode {
     background-color: #fefdfd;
    }
-   body .dark-mode{
-    background: #ffffffbd ;
-   }
    body.dark-mode .navbar {
     background-color: #cac8c6;
    }
@@ -776,9 +773,6 @@ body .dark-mode {
     border: 1px solid #060707;
     color: #050505;
    }
-   body.dark-mode .about p{
-    color: #f1f1f1;
-   }
    body.dark-mode .carousel-item{
     background: #f6ebe0;
    }
@@ -798,6 +792,9 @@ body .dark-mode {
     body.dark-mode h1{
     color: #000000;
     /* border-bottom: 2px solid  black; */
+   }
+   body.dark-mode .about h1{
+    border-bottom: 2px solid rgb(3, 3, 3);
    }
    body.dark-mode .information p{
     color: #000;
@@ -845,6 +842,10 @@ body .dark-mode {
    background: #f9fafa;
    color: #000000;
    }
+   body.dark-mode .about p{
+    color: #000;
+   }
+  
    body.dark-mode .glass_login h1 , p , a{
      color: #000;
  }
@@ -939,7 +940,7 @@ background: #fdf7f7;
     right: 0;
     background-color: rgba(5, 5, 5, 0.855);
     width: 100%;
-    margin-top: 20px;
+    margin-top: 15px;
     }
     .nav-links.show {
         display: flex;
