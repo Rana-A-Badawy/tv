@@ -793,6 +793,9 @@ body .dark-mode {
     color: #000000;
     /* border-bottom: 2px solid  black; */
    }
+   body.dark-mode .movies h1{
+    border-bottom: #000 2px solid;
+   }
    body.dark-mode .about h1{
     border-bottom: 2px solid rgb(3, 3, 3);
    }
